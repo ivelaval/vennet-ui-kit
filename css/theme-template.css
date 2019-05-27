@@ -1,0 +1,19 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+.principal-content {
+  height: 100%; }
+
+.color-box {
+  height: 4rem;
+  width: 100%; }
+
+.color-box:nth-child(n+7) {
+  color: white; }
+
+.logo {
+  width: 30px;
+  height: 30px;
+  fill: #5a00ce; }
