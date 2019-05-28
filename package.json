@@ -1,17 +1,20 @@
 {
   "name": "vennet-theme",
   "version": "1.0.0",
-  "main": "index.html",
   "repository": "https://ivelaval@bitbucket.org/vennetdevelopers/vennet-theme.git",
   "author": "Ivan Avila <ivelaval@gmail.com>",
   "license": "MIT",
+  "main": "dist/index.js",
   "scripts": {
-    "scss": "node-sass --watch scss -o css"
+    "scss": "node-sass --watch scss -o css",
+    "build": "tsc"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1"
+    "bootstrap": "^4.3.1",
+    "lit-element": "^2.1.0"
   },
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.12.0",
+    "typescript": "^3.4.5"
   }
 }
