@@ -1,4 +1,5 @@
-@import "imported-external-fonts";
+@charset "utf-8";
+@import "external-fonts";
 
 // Vennet overwriting variables
 @import "bootstrap-overwriting-variables";
@@ -24,5 +25,5 @@
 @import "../node_modules/bootstrap/scss/forms";
 
 // Vennet styles
-@import "vennet-theme-core";
+@import "vennet-ui-core";
 @import "theme-template";

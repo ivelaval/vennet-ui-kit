@@ -1,0 +1,27 @@
+@import "colors";
+@import "variables";
+@import "functions";
+
+body, html {
+  font-family: $vennet-primary-font, $vennet-secondary-font, $vennet-common-font;
+}
+
+@each $color, $value in $vennet-colors {
+  .bg-#{$color} {
+    background-color: $value;
+    color: choose-contrast-color($value);
+  }
+}
+
+@each $color, $value in colorMap($vennet-colors, 10) {
+  .bg-#{$color} {
+    background-color: $value;
+    color: choose-contrast-color($value);
+  }
+}
+
+@each $color, $value in colorMap($vennet-colors, 10) {
+  .color-#{$color} {
+    color: $value;
+  }
+}

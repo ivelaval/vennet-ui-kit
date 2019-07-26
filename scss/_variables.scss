@@ -1,10 +1,9 @@
 // Fonts
 $source-sans-pro-font: "Source Sans Pro";
-$lato-font: "Lato";
-$montserrat-font: "Montserrat";
-$nunito-font: "Nunito";
+$fira-code-font: "Fira Code";
 
 // Vennet theme variables
 $vennet-primary-font: $source-sans-pro-font;
-$vennet-secondary-font: sans-serif;
+$vennet-secondary-font: $fira-code-font;
+$vennet-common-font: sans-serif;
 $vennet-border-radius: .4rem;

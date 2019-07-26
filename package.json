@@ -6,15 +6,22 @@
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
-    "scss": "node-sass --watch scss -o css",
-    "build": "tsc"
+    "watch:sass": "node-sass --watch scss -o css",
+    "build:sass": "node-sass scss -o css",
+    "build:sass:prod": "yarn build:sass && yarn build:css:prod",
+    "build:ts": "tsc",
+    "build:css:prod": "postcss --use autoprefixer -b 'last 2 versions' < css/vennet-ui.css | postcss --use cssnano > css/vennet-ui.min.css"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1",
     "lit-element": "^2.1.0"
   },
   "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "cssnano": "^4.1.10",
     "node-sass": "^4.12.0",
-    "typescript": "^3.4.5"
+    "typescript": "^3.4.5",
+    "bootstrap": "^4.3.1",
+    "postcss": "^7.0.17",
+    "postcss-cli": "^6.1.3"
   }
 }
