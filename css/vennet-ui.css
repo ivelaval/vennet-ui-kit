@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Lato");
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
-@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css?family=Fira+Code&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -4742,7 +4740,7 @@ textarea.form-control {
  * Returns black for dark text and white for light text.
  */
 body, html {
-  font-family: "Source Sans Pro", sans-serif; }
+  font-family: "Source Sans Pro", "Fira Code", sans-serif; }
 
 .bg-spring-wood {
   background-color: #F7F4ED;
@@ -5340,6 +5338,9 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%; }
+
+header {
+  margin-bottom: 2em; }
 
 .principal-content {
   height: 100%; }
